@@ -49,3 +49,17 @@ footer p{
 nav a:hover {
     color:  orange;
 }
+input{
+    width: 100%;
+    padding: 8px 0px;
+    margin: 8px;
+}
+input [type=text] {
+    height: 100px;   
+}
+button{
+    background-color: white;
+    border:3px solid orange;
+    width: 100px;
+    height: 30px;
+}
