@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Conhecimentos em Andamento - Diego da Cunha Marins</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./imagem/favicon.ico" />
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <nav>
+            <li><a href="jornada.html">Minha Jornada</a></li>
+
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="project.html">Conhecimentos em Andamento</a></li>
+                <li><a href="project.html" class="active">Conhecimentos</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
 
-        <header class="fade-in">
-            <div class="center">
-                <h1>Conhecimentos em Andamento</h1>
-                <h2>Matérias e habilidades que estou desenvolvendo</h2>
-            </div>
+        <header class="fade-in center">
+            <h1>Conhecimentos em Andamento</h1>
+            <h2>Matérias e habilidades que estou desenvolvendo</h2>
         </header>
 
         <main class="fade-delay">
@@ -44,18 +50,71 @@
                 <h3>Desenvolvimento Web</h3>
                 <p>Prática com HTML5, CSS, JavaScript e PHP na criação de sites responsivos e funcionais. Inclui o desenvolvimento do meu portfólio pessoal.</p>
             </section>
+
+            <section id="skills-project">
+                <h3>Skills</h3>
+                <div class="skill">
+                    <span>Sistemas Operacionais</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Modelagem UML</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Segurança da Informação</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Desenvolvimento Web</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects-detailed">
+                <h3>Projetos</h3>
+                <ul>
+                    <li><strong>Meu Site Pessoal:</strong> <a href="https://github.com/Dgkkmarins/meu-site" target="_blank" rel="noopener noreferrer">Link no GitHub</a>. Desenvolvimento de site responsivo usando HTML, CSS e JS.</li>
+                    <li><strong>Projeto Segurança:</strong> <a href="https://github.com/Dgkkmarins/projeto-seguranca" target="_blank" rel="noopener noreferrer">Link no GitHub</a>. Conceitos básicos de criptografia e autenticação.</li>
+                    <li><strong>Modelagem UML:</strong> <a href="https://github.com/Dgkkmarins/uml-modelagem" target="_blank" rel="noopener noreferrer">Link no GitHub</a>. Diagramas para sistemas acadêmicos.</li>
+                </ul>
+            </section>
+
+            <section class="roadmap">
+                <h3>Roadmap de Estudos</h3>
+                <ol>
+                    <li>Avançar em Segurança da Informação (criptografia avançada, pentesting)</li>
+                    <li>Aprender linguagens backend (Python, Node.js)</li>
+                    <li>Explorar desenvolvimento mobile</li>
+                    <li>Estudar Cloud Computing</li>
+                </ol>
+            </section>
+
+            <section class="btn-voltar">
+                <a href="index.html" class="btn-secondary" aria-label="Voltar para a página Sobre Mim">← Voltar para Sobre Mim</a>
+            </section>
         </main>
 
         <footer class="fade-delay">
             <a href="https://www.instagram.com/marinscdiego/" target="_blank" rel="noopener noreferrer">
-                <img src="./imagem/icons8-instagram.svg" alt="Instagram">
+                <img src="./imagem/icons8-instagram.svg" alt="Instagram" />
                 <p>Instagram</p>
             </a>
             <a href="https://github.com/Dgkkmarins" target="_blank" rel="noopener noreferrer">
-                <img src="./imagem/github.svg" alt="GitHub">
+                <img src="./imagem/github.svg" alt="GitHub" />
                 <p>GitHub</p>
             </a>
+            <p class="copyright">© 2025 Diego da Cunha Marins. Todos os direitos reservados.</p>
         </footer>
     </div>
 </body>
 </html>
+
